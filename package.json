@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "pnpm --filter @zc-element/play dev",
     "docs:dev": "pnpm --filter @zc-element/docs dev",
-    "docs:build": "pnpm --filter @toy-element/docs build",
+    "docs:build": "pnpm --filter @zc-element/docs build",
     "test": "echo \"todo\""
   },
   "keywords": [],
