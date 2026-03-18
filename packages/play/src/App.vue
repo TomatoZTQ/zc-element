@@ -1,6 +1,6 @@
 <script setup lang="ts">
 </script>
-
+  
 <template>
-  <er-button />
+  <er-button type="primary" size="small">test</er-button>
 </template>
