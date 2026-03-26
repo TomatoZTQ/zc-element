@@ -2,5 +2,5 @@
 </script>
   
 <template>
-  <er-button type="primary" size="small">test</er-button>
+  <zc-button type="primary" size="small">test</zc-button>
 </template>

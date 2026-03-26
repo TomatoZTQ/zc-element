@@ -4,7 +4,7 @@ import { provide, reactive, toRef } from "vue";
 import { BUTTON_GROUP_CTX_KEY } from "./contants";
 
 defineOptions({
-  name: "ErButtonGroup"
+  name: "ZcButtonGroup"
 })
 const props = defineProps<ButtonGroupProps>()
 

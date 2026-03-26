@@ -1,13 +1,13 @@
 import type { Meta, StoryObj, ArgTypes } from '@storybook/vue3'
 import { fn, within, userEvent, expect } from 'storybook/test'
 
-import { ErButton, ErButtonGroup } from 'zc-element'
+import { ZcButton, ZcButtonGroup } from '@tomatoztq/zc-element'
 
-type Story = StoryObj<typeof ErButton> & { argTypes?: ArgTypes }
+type Story = StoryObj<typeof ZcButton> & { argTypes?: ArgTypes }
 
-const meta: Meta<typeof ErButton> = {
+const meta: Meta<typeof ZcButton> = {
   title: "Example/Button",
-  component: ErButton,
+  component: ZcButton,
   tags: ["autodocs"],
   argTypes: {
     type: {
@@ -68,12 +68,12 @@ export const Default: Story & { args: { content: string } } = {
     content: "Button",
   },
   render: (args) => ({
-    components: { ErButton },
+    components: { ZcButton },
     setup() {
       return { args };
     },
     template: container(
-      `<er-button v-bind="args">{{args.content}}</er-button>`
+      `<zc-button v-bind="args">{{args.content}}</zc-button>`
     ),
   }),
   play: async ({ canvasElement, args, step }) => {
@@ -113,15 +113,15 @@ export const Group: Story & { args: { content1: string; content2: string } } = {
     content2: "Button2",
   },
   render: (args) => ({
-    components: { ErButton, ErButtonGroup },
+    components: { ZcButton, ZcButtonGroup },
     setup() {
       return { args };
     },
     template: container(`
-       <er-button-group :type="args.groupType" :size="args.groupSize" :disabled="args.groupDisabled">
-         <er-button v-bind="args">{{args.content1}}</er-button>
-         <er-button v-bind="args">{{args.content2}}</er-button>
-       </er-button-group>
+       <zc-button-group :type="args.groupType" :size="args.groupSize" :disabled="args.groupDisabled">
+         <zc-button v-bind="args">{{args.content1}}</zc-button>
+         <zc-button v-bind="args">{{args.content2}}</zc-button>
+       </zc-button-group>
     `),
   }),
   play: async ({ canvasElement, args, step }) => {

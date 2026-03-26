@@ -9,7 +9,7 @@
     "docs:dev": "pnpm --filter @zc-element/docs dev",
     "docs:build": "pnpm --filter @zc-element/docs build",
     "test": "pnpm --filter @zc-element/components test",
-    "build": "pnpm --filter zc-element build"
+    "build": "pnpm --filter @tomatoztq/zc-element build"
   },
   "keywords": [],
   "author": "",
@@ -46,6 +46,6 @@
     "@zc-element/utils": "workspace:*",
     "lodash-es": "^4.17.23",
     "vue": "^3.5.30",
-    "zc-element": "workspace:*"
+    "@tomatoztq/zc-element": "workspace:*"
   }
 }

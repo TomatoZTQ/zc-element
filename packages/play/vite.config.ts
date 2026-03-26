@@ -11,6 +11,12 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
   plugins: [vue()],
+  resolve: {
+    alias: {
+      "@tomatoztq/zc-element/dist/index.css": path.resolve(dirname, "../theme/index.css"),
+      "@tomatoztq/zc-element": path.resolve(dirname, "../core/index.ts"),
+    },
+  },
   test: {
     workspace: [{
       extends: true,

@@ -2,11 +2,11 @@
 import { ref, computed, inject } from 'vue'
 import type { ButtonProps, ButtonEmits, ButtonInstance } from './types'
 import { throttle } from 'lodash-es'
-import ErIcon from '../Icon/Icon.vue';
+import ZcIcon from '../Icon/Icon.vue';
 import { BUTTON_GROUP_CTX_KEY } from './contants';
 
 defineOptions({
-  name: 'ErButton'
+  name: 'ZcButton'
 })
 const props = withDefaults(defineProps<ButtonProps>(), {
   tag: "button",
@@ -56,10 +56,10 @@ defineExpose<ButtonInstance>({
   >
     <template v-if="loading">
       <slot name="loading">
-        <er-icon class="loading-icon" :icon="loadingIcon ?? 'spinner'" :style="iconStyle" size="1x" spin />
+        <ZcIcon class="loading-icon" :icon="loadingIcon ?? 'spinner'" :style="iconStyle" size="1x" spin />
       </slot>
     </template>
-    <er-icon v-if="icon && !loading" :icon="icon" :style="iconStyle" size="1x" />
+    <ZcIcon v-if="icon && !loading" :icon="icon" :style="iconStyle" size="1x" />
     <slot></slot>
   </component>
 </template>

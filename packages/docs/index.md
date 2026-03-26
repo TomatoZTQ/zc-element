@@ -1,25 +1,23 @@
----
-# https://vitepress.dev/reference/default-theme-home-page
+﻿---
 layout: home
 
 hero:
-  name: "Zc-Element"
-  text: "高仿 ElementPlus 组件库"
-  tagline: My great project tagline
+  name: zc-element
+  text: 高仿 ElementPlus 组件库
+  tagline: 基于 Vue3 + TypeScript 开发
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 快速开始
+      link: /get-started
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 查看组件
+      link: /components/button
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 基础组件
+    details: 当前已支持 Button 组件。
+  - title: 表单组件
+    details: 当前已支持 Input、Switch 组件。
+  - title: 反馈与展示
+    details: 当前已支持 Alert、Collapse 组件。
 ---
-
